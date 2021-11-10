@@ -1,0 +1,30 @@
+package com.company;
+import java.util.Scanner;
+
+public class PercentageCalculator {
+    public static void main(String[] args) {
+        System.out.println("Welcome to Shashwat Java Program");
+        System.out.println("This is the Exam Percentage Calculator. Only Papers with Total Marks 100.");
+        System.out.println("Maximum Subject:5, If you have less subject simply enter 0 in remaining Subjects.");
+        System.out.println("Please Enter Your Number of Subjects Not More than 5");
+        Scanner sc = new Scanner(System.in);
+        int sub = sc.nextInt();
+        sub = sub*100;
+        System.out.println("Enter Marks of 1st Subject");
+        int a = sc.nextInt();
+        System.out.println("Enter Marks of 2nd Subject");
+        int b = sc.nextInt();
+        System.out.println("Enter Marks of 3rd Subject");
+        int c = sc.nextInt();
+        System.out.println("Enter Marks of 4th Subject");
+        int d = sc.nextInt();
+        System.out.println("Enter Marks of 5th Subject");
+        int e = sc.nextInt();
+        int sum = a+b+c+d+e;
+        System.out.println("Total Marks Scored "+ sum);
+        System.out.println("Calculating Percentage of Your Marks.");
+        float per = (sum*100)/sub;
+        System.out.println("Your Percentage is: "+ per);
+        System.out.println("Thanks for Using Percentage Calculator By Shashwat");
+    }
+}
